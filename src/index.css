@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-900 text-white min-h-screen transition-colors duration-300;
+  margin: 0;
+  font-family: sans-serif;
+}
