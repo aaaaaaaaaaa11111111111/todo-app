@@ -18,6 +18,8 @@
 # Клонировать репозиторий
 ```
 git clone https://github.com/username/todo-app.git
+```
+```
 cd todo-app
 ```
 # Установить зависимости и запустить проект
