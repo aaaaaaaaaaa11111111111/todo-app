@@ -7,6 +7,14 @@ interface Props {
 }
 
 export default function TodoList({ todos, onToggle, onDelete }: Props) {
+  if (todos.length === 0) {
+    return (
+      <p className="text-gray-400 text-center py-4 italic">
+        Пока нет задач. Может, выпить матчу в новых самбах? 
+      </p>
+    );
+  }
+
   return (
     <ul>
       {todos.map((todo) => (

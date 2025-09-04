@@ -92,7 +92,9 @@ function App() {
           onDelete={deleteTodo}
         />
 
-        <Footer remaining={remaining} onClearCompleted={clearCompleted} />
+        {todos.length > 0 && (
+          <Footer remaining={remaining} onClearCompleted={clearCompleted} />
+        )}
       </div>
     </div>
   );
